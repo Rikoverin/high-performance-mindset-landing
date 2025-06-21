@@ -70,7 +70,10 @@ function App() {
               <TrendingUp className="w-8 h-8 text-blue-600" />
               <span className="text-xl font-bold text-slate-800">High Performance Mindset</span>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 text-white"
+              onClick={() => window.open('https://pay.hotmart.com/W100413636Q', '_blank')}
+            >
               <Download className="w-4 h-4 mr-2" />
               Obtener Ahora
             </Button>
@@ -118,21 +121,16 @@ function App() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                >
-                  <DollarSign className="w-5 h-5 mr-2" />
-                  Comprar por $29.99
-                  <ArrowRight className={`w-5 h-5 ml-2 transition-transform ${isHovered ? 'translate-x-1' : ''}`} />
-                </Button>
-                <Button size="lg" variant="outline" className="px-8 py-4 text-lg">
-                  Vista Previa Gratuita
-                </Button>
-              </div>
+              <Button 
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                onClick={() => window.open('https://pay.hotmart.com/W100413636Q', '_blank')}
+              >
+                Obtener Ahora
+                <ArrowRight className={`w-5 h-5 ml-2 transition-transform ${isHovered ? 'translate-x-1' : ''}`} />
+              </Button>
             </div>
 
             <div className="flex justify-center">
@@ -253,12 +251,12 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100 px-8 py-4 text-lg font-semibold">
-              <DollarSign className="w-5 h-5 mr-2" />
-              Comprar por $29.99
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg">
-              Más Información
+            <Button 
+              size="lg" 
+              className="bg-white text-blue-600 hover:bg-slate-100 px-8 py-4 text-lg font-semibold"
+              onClick={() => window.open('https://pay.hotmart.com/W100413636Q', '_blank')}
+            >
+              Comienza tu transformación hoy
             </Button>
           </div>
 
